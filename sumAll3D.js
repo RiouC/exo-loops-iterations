@@ -23,3 +23,12 @@ for (let i of tab) {
 }
 
 console.log(res);
+
+
+// How many different ways should i use for this exercice ?
+// Yes
+flatAdder = adder([].concat(...tab.flat()));
+flatReduce = [].concat(...tab.flat()).reduce((acc, curr) => acc + curr, 0);
+
+console.log(flatAdder);
+console.log(flatReduce);
