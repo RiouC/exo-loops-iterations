@@ -29,6 +29,8 @@ console.log(res);
 // Yes
 flatAdder = adder([].concat(...tab.flat()));
 flatReduce = [].concat(...tab.flat()).reduce((acc, curr) => acc + curr, 0);
+toInfinityAndBeyond = tab.flat(Infinity).reduce((acc, curr) => acc + curr, 0);
 
 console.log(flatAdder);
 console.log(flatReduce);
+console.log(toInfinityAndBeyond);
